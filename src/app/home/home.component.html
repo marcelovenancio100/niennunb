@@ -1,0 +1,10 @@
+<h1>Home</h1>
+<p>Página acessada por todos os usuários autenticados.</p>
+<p>Role: <strong>{{currentUser.role}}</strong>.</p>
+
+<div>
+    Usuário atual:
+    <ul>
+        <li *ngIf="userFromApi">{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
+    </ul>
+</div>
